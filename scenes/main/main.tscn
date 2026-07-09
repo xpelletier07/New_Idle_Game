@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://sc5todipq3ua"]
+
+[ext_resource type="PackedScene" uid="uid://boy2od1yvl7sc" path="res://scenes/ui/skill_panels/skill_panel.tscn" id="1_hyk8p"]
+
+[node name="Main" type="Control" unique_id=1605620552]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=1536637811]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 26.0
+offset_right = 133.0
+offset_bottom = 63.0
+current_tab = 0
+
+[node name="Foraging" parent="TabContainer" unique_id=508983646 instance=ExtResource("1_hyk8p")]
+layout_mode = 2
+metadata/_tab_index = 0

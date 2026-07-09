@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SkillAction" format=3 uid="uid://cybk13qms12dh"]
+
+[ext_resource type="Resource" uid="uid://dmv3jkh72ftig" path="res://resources/items/oak_wood.tres" id="1_nnfyk"]
+[ext_resource type="Script" uid="uid://bh8yxqleu2ow7" path="res://scripts/core/skill_action.gd" id="2_lsit0"]
+
+[resource]
+script = ExtResource("2_lsit0")
+action_name = "Forage"
+item_reward = ExtResource("1_nnfyk")
+metadata/_custom_type_script = "uid://bh8yxqleu2ow7"
