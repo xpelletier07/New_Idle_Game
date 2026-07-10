@@ -4,8 +4,8 @@ class_name SkillSidebarButton
 signal pressed_with_id(skill_id: String)
 
 @onready var icon_rect: TextureRect = $HBoxContainer/Icon
-@onready var name_label: Label = $HBoxContainer/VBoxContainer/NameLabel
-@onready var level_label: Label = $HBoxContainer/VBoxContainer/LevelLabel
+@onready var name_label: Label = $HBoxContainer2/NameLabel
+@onready var level_label: Label = $HBoxContainer2/LevelLabel
 
 var skill_id: String
 var skill: Skill

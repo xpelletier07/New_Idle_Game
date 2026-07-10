@@ -15,18 +15,23 @@ script = ExtResource("1_a78sk")
 actions = Array[ExtResource("2_b3xwk")]([ExtResource("2_qvelk")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=155958530]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Header" type="VBoxContainer" parent="VBoxContainer" unique_id=1759803744]
 layout_mode = 2
 
 [node name="SkillNameLabel" type="Label" parent="VBoxContainer/Header" unique_id=964156781]
 layout_mode = 2
+horizontal_alignment = 1
 
 [node name="LevelLabel" type="Label" parent="VBoxContainer/Header" unique_id=1437372206]
 layout_mode = 2
+horizontal_alignment = 1
 
 [node name="XpBar" type="ProgressBar" parent="VBoxContainer/Header" unique_id=2261589]
 layout_mode = 2
@@ -34,6 +39,8 @@ layout_mode = 2
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=1564189733]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_colors/scroll_hint_vertical_color = Color(0.6117647, 0, 0, 1)
+theme_override_colors/scroll_hint_horizontal_color = Color(0.589812, 0.3812865, 0, 1)
 
 [node name="ActionsContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer" unique_id=569821492]
 layout_mode = 2

@@ -1,22 +1,37 @@
 [gd_scene format=3 uid="uid://belgoycv078ag"]
 
+[ext_resource type="Script" uid="uid://dlfh07bfq3eyk" path="res://scripts/ui/sidebar/skill_sidebar_button.gd" id="1_t3j3g"]
+
 [node name="SkillSidebarButton" type="Button" unique_id=439667312]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+script = ExtResource("1_t3j3g")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=801900370]
+propagate_maximum_size = false
 layout_mode = 0
-offset_right = 40.0
+offset_right = 42.0
 offset_bottom = 40.0
 
 [node name="Icon" type="TextureRect" parent="HBoxContainer" unique_id=1393133019]
 custom_minimum_size = Vector2(32, 32)
+custom_maximum_size = Vector2(32, 32)
 layout_mode = 2
 stretch_mode = 5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=709779234]
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=356638499]
+layout_mode = 0
+offset_left = 36.0
+offset_right = 42.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+
+[node name="NameLabel" type="Label" parent="HBoxContainer2" unique_id=1079382588]
 layout_mode = 2
 
-[node name="NameLabel" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1079382588]
-layout_mode = 2
-
-[node name="LevelLabel" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1612635667]
+[node name="LevelLabel" type="Label" parent="HBoxContainer2" unique_id=1612635667]
 layout_mode = 2
