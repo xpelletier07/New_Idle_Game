@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Skill" format=3 uid="uid://cn67rlulctrsg"]
+
+[ext_resource type="Texture2D" uid="uid://cer8n6hhdrk1w" path="res://icon.svg" id="1_8csyi"]
+[ext_resource type="Script" uid="uid://dapt5ma3g3qe3" path="res://scripts/core/skill.gd" id="1_dlc5n"]
+
+[resource]
+script = ExtResource("1_dlc5n")
+skill_id = "foraging"
+skill_name = "Foraging"
+icon = ExtResource("1_8csyi")
+metadata/_custom_type_script = "uid://dapt5ma3g3qe3"

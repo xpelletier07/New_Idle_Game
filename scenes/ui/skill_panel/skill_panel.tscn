@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://boy2od1yvl7sc"]
+
+[ext_resource type="Script" uid="uid://uq8fm2aujm7p" path="res://scripts/ui/skill_panel.gd" id="1_a78sk"]
+[ext_resource type="Script" uid="uid://bh8yxqleu2ow7" path="res://scripts/core/skill_action.gd" id="2_b3xwk"]
+[ext_resource type="Resource" uid="uid://cybk13qms12dh" path="res://resources/actions/forage.tres" id="2_qvelk"]
+
+[node name="SkillPanel" type="Control" unique_id=508983646]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a78sk")
+actions = Array[ExtResource("2_b3xwk")]([ExtResource("2_qvelk")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=155958530]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Header" type="VBoxContainer" parent="VBoxContainer" unique_id=1759803744]
+layout_mode = 2
+
+[node name="SkillNameLabel" type="Label" parent="VBoxContainer/Header" unique_id=964156781]
+layout_mode = 2
+
+[node name="LevelLabel" type="Label" parent="VBoxContainer/Header" unique_id=1437372206]
+layout_mode = 2
+
+[node name="XpBar" type="ProgressBar" parent="VBoxContainer/Header" unique_id=2261589]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=1564189733]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ActionsContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer" unique_id=569821492]
+layout_mode = 2
+columns = 4

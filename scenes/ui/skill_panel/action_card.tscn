@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c2dwtbe2avtx1"]
+
+[ext_resource type="Script" uid="uid://bw154exa1jiyk" path="res://scripts/ui/skill_panel/action_card.gd" id="1_lsh6l"]
+
+[node name="ActionCard" type="Button" unique_id=1514819113]
+custom_minimum_size = Vector2(120, 140)
+offset_left = 275.0
+offset_top = 188.0
+offset_right = 395.0
+offset_bottom = 328.0
+script = ExtResource("1_lsh6l")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1411261393]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer" unique_id=1698082452]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+stretch_mode = 5
+
+[node name="NameLabel" type="Label" parent="VBoxContainer" unique_id=433415958]
+layout_mode = 2
+
+[node name="XpLabel" type="Label" parent="VBoxContainer" unique_id=1826348986]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer" unique_id=620645086]
+layout_mode = 2

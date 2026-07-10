@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://doa1jjsy0dywq"]
+
+[ext_resource type="Script" uid="uid://ytvkfcxyw8u1" path="res://scripts/ui/sidebar/sidebar.gd" id="1_mt228"]
+
+[node name="Sidebar" type="VBoxContainer" unique_id=1952770897]
+custom_minimum_size = Vector2(200, 0)
+script = ExtResource("1_mt228")
